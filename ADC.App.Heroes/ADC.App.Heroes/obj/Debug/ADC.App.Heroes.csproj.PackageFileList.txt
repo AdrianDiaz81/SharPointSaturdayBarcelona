@@ -1,0 +1,1 @@
+bin\Debug\ADC.App.Heroes.wsp

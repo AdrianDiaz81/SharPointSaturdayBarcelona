@@ -1,0 +1,74 @@
+﻿/* Place custom styles below */
+.divCompartiMOSSAuthor
+{
+    position: relative;
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.divCompartiMOSSAuthor .divPicture
+{
+    /*position: absolute;*/
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+
+.divCompartiMOSSAuthor .divPicture a {
+    display: block;
+    height: 250px;
+}
+
+.divCompartiMOSSAuthor .divPicture img {
+    width: 250px;
+    max-width: 250px;
+    height: 250px;
+    max-height: 250px;
+}
+
+.divCompartiMOSSAuthor a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.divCompartiMOSSAuthor .divOverlay 
+{
+    position: absolute;
+    z-index: 20;
+    top: 205px;
+    left: 0;
+    height: 250px;
+    width: 250px;
+    /*IE8<=*/background-color: #f90b39;
+    /*VIOLETA*//*background-color: rgba(146, 0, 145, 0.8);*/
+    /*GRIS*//*background-color: rgba(48, 48, 48, 0.8);*/
+    /*AZUL*//*background-color: rgba(0, 65, 145, 0.8);*/
+    /*ROJO*/background-color: rgba(249, 11, 57, 0.85);
+    color: #fff;
+    font-size: 11px;
+    
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.divCompartiMOSSAuthor .divOverlay a.linkOverlay
+{
+    display: block;
+    height: 240px;
+    padding: 5px 10px;
+}
+
+.divCompartiMOSSAuthor .divOverlay a.linkOverlay ,
+.divCompartiMOSSAuthor .divOverlay a.linkOverlay H2 {
+    color: #fff;
+}
+
+.divCompartiMOSSAuthor .divOverlay a.linkOverlay H2 {
+    font-weight: 400;
+    font-size: 19px;
+}
+

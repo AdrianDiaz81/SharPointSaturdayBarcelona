@@ -1,0 +1,18 @@
+﻿<ul>
+    {{#.}}
+    <li>
+        <div class="divCompartiMOSSAuthor">
+            <div class="divPicture">
+                <a href="/detail.aspx?supeheroe={{_id}}" title="{{_name}}">
+                    <img src="{{_photo}}" class="cbs-largePictureImg" alt="{{_name}}">
+                </a>
+            </div>
+            <div class="divOverlay" style="top: 205px;">
+                <a class="linkOverlay" href="/detail.aspx?supeheroe={{_id}}" title="{{_name}}">
+                    <h2 class="ms-noWrap"> {{_name}}</h2>
+                </a>
+            </div>
+        </div>
+    </li>
+    {{/.}}
+</ul>

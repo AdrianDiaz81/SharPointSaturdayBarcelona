@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Scripts">
+    <File Path="Scripts\App.js" Url="Scripts/App.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\vendor\jquery\jquery-1.9.1.min.map" Url="Scripts/vendor/jquery/jquery-1.9.1.min.map" ReplaceContent="TRUE" />
+    <File Path="Scripts\vendor\jquery\jquery-1.9.1.min.js" Url="Scripts/vendor/jquery/jquery-1.9.1.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\vendor\jquery\jquery-1.9.1.js" Url="Scripts/vendor/jquery/jquery-1.9.1.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\vendor\jquery\jquery-1.9.1.intellisense.js" Url="Scripts/vendor/jquery/jquery-1.9.1.intellisense.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\vendor\require.js" Url="Scripts/vendor/require.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\vendor\r.js" Url="Scripts/vendor/r.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\typings\requirejs\require.d.ts" Url="Scripts/typings/requirejs/require.d.ts" ReplaceContent="TRUE" />
+    <File Path="Scripts\typings\jquery\jquery.d.ts" Url="Scripts/typings/jquery/jquery.d.ts" ReplaceContent="TRUE" />
+    <File Path="Scripts\typings\microsoft-ajax\microsoft.ajax.d.ts" Url="Scripts/typings/microsoft-ajax/microsoft.ajax.d.ts" ReplaceContent="TRUE" />
+    <File Path="Scripts\typings\sharepoint\SharePoint.d.ts" Url="Scripts/typings/sharepoint/SharePoint.d.ts" ReplaceContent="TRUE" />
+    <File Path="Scripts\app\app.ts" Url="Scripts/app/app.ts" ReplaceContent="TRUE" />
+    <File Path="Scripts\app\superheroes\superheroes.ts" Url="Scripts/app/superheroes/superheroes.ts" ReplaceContent="TRUE" />
+    <File Path="Scripts\app\superheroes\superheroes.js" Url="Scripts/app/superheroes/superheroes.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\app\app.js" Url="Scripts/app/app.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\bootstraper.ts" Url="Scripts/bootstraper.ts" ReplaceContent="TRUE" />
+    <File Path="Scripts\bootstraper.js" Url="Scripts/bootstraper.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\typings\es6-promise\es6-promise.d.ts" Url="Scripts/typings/es6-promise/es6-promise.d.ts" ReplaceContent="TRUE" />
+    <File Path="Scripts\app\superheroes\superHeroes.html" Url="Scripts/app/superheroes/superHeroes.html" ReplaceContent="TRUE" />
+    <File Path="Scripts\typings\mustache\mustache.d.ts" Url="Scripts/typings/mustache/mustache.d.ts" ReplaceContent="TRUE" />
+    <File Path="Scripts\vendor\mustache\mustache.js" Url="Scripts/vendor/mustache/mustache.js" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

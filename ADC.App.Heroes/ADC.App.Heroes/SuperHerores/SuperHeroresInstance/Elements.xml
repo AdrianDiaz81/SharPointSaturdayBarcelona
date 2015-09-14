@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="SuperHeroes" OnQuickLaunch="TRUE" 
+                TemplateType="100" Url="Lists/SuperHeroes" 
+                Description="My List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Spiderman</Field>
+          <Field Name="Photo">11</Field>
+          </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+  
+</Elements>

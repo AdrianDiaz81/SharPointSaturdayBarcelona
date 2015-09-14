@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Scripts\" Type="ElementManifest" />
+    <ProjectItemFile Source="App.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="vendor\jquery\jquery-1.9.1.min.map" Target="Scripts\vendor\jquery\" Type="ElementFile" />
+    <ProjectItemFile Source="vendor\jquery\jquery-1.9.1.min.js" Target="Scripts\vendor\jquery\" Type="ElementFile" />
+    <ProjectItemFile Source="vendor\jquery\jquery-1.9.1.js" Target="Scripts\vendor\jquery\" Type="ElementFile" />
+    <ProjectItemFile Source="vendor\jquery\jquery-1.9.1.intellisense.js" Target="Scripts\vendor\jquery\" Type="ElementFile" />
+    <ProjectItemFile Source="vendor\require.js" Target="Scripts\vendor\" Type="ElementFile" />
+    <ProjectItemFile Source="vendor\r.js" Target="Scripts\vendor\" Type="ElementFile" />
+    <ProjectItemFile Source="typings\requirejs\require.d.ts" Target="Scripts\typings\requirejs\" Type="ElementFile" />
+    <ProjectItemFile Source="typings\jquery\jquery.d.ts" Target="Scripts\typings\jquery\" Type="ElementFile" />
+    <ProjectItemFile Source="typings\microsoft-ajax\microsoft.ajax.d.ts" Target="Scripts\typings\microsoft-ajax\" Type="ElementFile" />
+    <ProjectItemFile Source="typings\sharepoint\SharePoint.d.ts" Target="Scripts\typings\sharepoint\" Type="ElementFile" />
+    <ProjectItemFile Source="app\app.ts" Target="Scripts\app\" Type="ElementFile" />
+    <ProjectItemFile Source="app\superheroes\superheroes.ts" Target="Scripts\app\superheroes\" Type="ElementFile" />
+    <ProjectItemFile Source="app\superheroes\superheroes.js" Target="Scripts\app\superheroes\" Type="ElementFile" />
+    <ProjectItemFile Source="app\app.js" Target="Scripts\app\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstraper.ts" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstraper.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="typings\es6-promise\es6-promise.d.ts" Target="Scripts\typings\es6-promise\" Type="ElementFile" />
+    <ProjectItemFile Source="app\superheroes\superHeroes.html" Target="Scripts\app\superheroes\" Type="ElementFile" />
+    <ProjectItemFile Source="typings\mustache\mustache.d.ts" Target="Scripts\typings\mustache\" Type="ElementFile" />
+    <ProjectItemFile Source="vendor\mustache\mustache.js" Target="Scripts\vendor\mustache\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

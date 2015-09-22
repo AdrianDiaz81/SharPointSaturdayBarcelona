@@ -26,6 +26,13 @@ define(["require", "exports", "services/superheroesservices", "mustache"], funct
                 var template = $('#templates').html();
                 var html = mustache.render(template, data);
                 $('#message').html(html);
+                $('#btnEditSuperHeroes').click(function () {
+                    var superHeroe;
+                    superHeroe = new marvel.superHeroes.superHeroes(1, $("#Titulo").val(), $("#Imagen").val(), "");
+                    item.editData(superHeroe).then(function () {
+                        loadData();
+                    });
+                });
             });
         });
     }

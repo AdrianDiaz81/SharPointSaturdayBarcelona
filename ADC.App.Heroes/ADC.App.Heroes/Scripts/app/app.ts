@@ -35,7 +35,13 @@ var item: marvel.superHeroes.marvel = new marvel.superHeroes.marvel();
                 var html = mustache.render(template, data);
 
                 $('#message').html(html);
-              
+                $('#btnEditSuperHeroes').click(function () {
+                    var superHeroe: marvel.superHeroes.superHeroes;
+                    superHeroe = new marvel.superHeroes.superHeroes(1, $("#Titulo").val(), $("#Imagen").val(), "");
+                    item.editData(superHeroe).then(function () {
+                        loadData();
+                    });
+                });
             });
         });
     }

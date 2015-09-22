@@ -2,5 +2,17 @@
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <Module Name="Images">
     <File Path="Images\AppIcon.png" Url="Images/AppIcon.png" ReplaceContent="TRUE" />
+    <File Path="Images\spiderman.jpg" Url="Images/spiderman.jpg" ReplaceContent="TRUE" />
+    <File Path="Images\wolverine14.jpg" Url="Images/wolverine14.jpg" ReplaceContent="TRUE" />
+    <File Path="Images\hulk.jpg" Url="Images/hulk.jpg" ReplaceContent="TRUE" />
+    <File Path="Images\thor.jpg" Url="Images/thor.jpg" ReplaceContent="TRUE" />
+    <File Path="Images\Robin.jpg" Url="Images/Robin.jpg" ReplaceContent="TRUE" />
+    <File Path="Images\2.png" Url="Images/2.png" ReplaceContent="TRUE" />
+    <File Path="Images\superman_.png" Url="Images/superman_.png" ReplaceContent="TRUE" />
+    <File Path="Images\capitanAmerica.png" Url="Images/capitanAmerica.png" ReplaceContent="TRUE" />
+    <File Path="Images\ironman.jpg" Url="Images/ironman.jpg" ReplaceContent="TRUE" />
+    <File Path="Images\Catwoman.jpg" Url="Images/Catwoman.jpg" ReplaceContent="TRUE" />
+    <File Path="Images\Logo.jpg" Url="Images/Logo.jpg" ReplaceContent="TRUE" />
+    <File Path="Images\LogoA.jpg" Url="Images/LogoA.jpg" ReplaceContent="TRUE" />
   </Module>
 </Elements>

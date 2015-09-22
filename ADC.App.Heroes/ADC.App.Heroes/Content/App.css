@@ -1,8 +1,17 @@
 ﻿/* Place custom styles below */
+.cbs-List {
+    display: table;
+    list-style-image:none;
+    list-style-type:none;
+}
+.cbs-List li {
+    width:250px;
+    height:250px;
+}
 .divCompartiMOSSAuthor
 {
     position: relative;
-    display: inline-block;
+    display: inline-block!important;
     width: 250px;
     height: 250px;
     overflow: hidden;
@@ -71,4 +80,8 @@
     font-weight: 400;
     font-size: 19px;
 }
+
+ul{
+       list-style:none;
+       }
 

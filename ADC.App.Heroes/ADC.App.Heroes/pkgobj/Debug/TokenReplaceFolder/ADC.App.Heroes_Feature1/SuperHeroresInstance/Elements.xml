@@ -7,8 +7,44 @@
       <Rows>
         <Row>
           <Field Name="Title">Spiderman</Field>
-          <Field Name="Photo">11</Field>
+          <Field Name="Photo">./../Images/spiderman.jpg</Field>
           </Row>
+        <Row>
+          <Field Name="Title">Superman</Field>
+          <Field Name="Photo">./../Images/superman_.png</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Capitan Ámerica</Field>
+          <Field Name="Photo">./../Images/capitanAmerica.png</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Hulk</Field>
+          <Field Name="Photo">./../Images/hulk.jpg</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Batman</Field>
+          <Field Name="Photo">./../Images/2.png</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Robin</Field>
+          <Field Name="Photo">./../Images/Robin.jpg</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Thor</Field>
+          <Field Name="Photo">./../Images/thor.jpg</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Lobezno</Field>
+          <Field Name="Photo">./../Images/wolverine14.jpg</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">IronMan</Field>
+          <Field Name="Photo">./../Images/ironman.jpg</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">CatWoman</Field>
+          <Field Name="Photo">./../Images/catWoman.jpg</Field>
+        </Row>
       </Rows>
     </Data>
   </ListInstance>

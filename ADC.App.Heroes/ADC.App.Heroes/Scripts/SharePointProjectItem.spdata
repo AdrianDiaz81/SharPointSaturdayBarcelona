@@ -14,14 +14,19 @@
     <ProjectItemFile Source="typings\microsoft-ajax\microsoft.ajax.d.ts" Target="Scripts\typings\microsoft-ajax\" Type="ElementFile" />
     <ProjectItemFile Source="typings\sharepoint\SharePoint.d.ts" Target="Scripts\typings\sharepoint\" Type="ElementFile" />
     <ProjectItemFile Source="app\app.ts" Target="Scripts\app\" Type="ElementFile" />
-    <ProjectItemFile Source="app\superheroes\superheroes.ts" Target="Scripts\app\superheroes\" Type="ElementFile" />
-    <ProjectItemFile Source="app\superheroes\superheroes.js" Target="Scripts\app\superheroes\" Type="ElementFile" />
+    <ProjectItemFile Source="app\services\superheroesServices.ts" Target="Scripts\app\services\" Type="ElementFile" />
     <ProjectItemFile Source="app\app.js" Target="Scripts\app\" Type="ElementFile" />
     <ProjectItemFile Source="bootstraper.ts" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="bootstraper.js" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="typings\es6-promise\es6-promise.d.ts" Target="Scripts\typings\es6-promise\" Type="ElementFile" />
-    <ProjectItemFile Source="app\superheroes\superHeroes.html" Target="Scripts\app\superheroes\" Type="ElementFile" />
+    <ProjectItemFile Source="app\view\listSuperHeroes.html" Target="Scripts\app\view\" Type="ElementFile" />
     <ProjectItemFile Source="typings\mustache\mustache.d.ts" Target="Scripts\typings\mustache\" Type="ElementFile" />
     <ProjectItemFile Source="vendor\mustache\mustache.js" Target="Scripts\vendor\mustache\" Type="ElementFile" />
+    <ProjectItemFile Source="app\view\addSuperHeroes.html" Target="Scripts\app\view\" Type="ElementFile" />
+    <ProjectItemFile Source="app\view\editSuperHeroes.html" Target="Scripts\app\view\" Type="ElementFile" />
+    <ProjectItemFile Source="app\view\deleteSuperHeroes.html" Target="Scripts\app\view\" Type="ElementFile" />
+    <ProjectItemFile Source="app\services\superheroesservices.js" Target="Scripts\app\services\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstraperView.ts" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstraperView.js" Target="Scripts\" Type="ElementFile" />
   </Files>
 </ProjectItem>

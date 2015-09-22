@@ -13,14 +13,19 @@
     <File Path="Scripts\typings\microsoft-ajax\microsoft.ajax.d.ts" Url="Scripts/typings/microsoft-ajax/microsoft.ajax.d.ts" ReplaceContent="TRUE" />
     <File Path="Scripts\typings\sharepoint\SharePoint.d.ts" Url="Scripts/typings/sharepoint/SharePoint.d.ts" ReplaceContent="TRUE" />
     <File Path="Scripts\app\app.ts" Url="Scripts/app/app.ts" ReplaceContent="TRUE" />
-    <File Path="Scripts\app\superheroes\superheroes.ts" Url="Scripts/app/superheroes/superheroes.ts" ReplaceContent="TRUE" />
-    <File Path="Scripts\app\superheroes\superheroes.js" Url="Scripts/app/superheroes/superheroes.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\app\services\superheroesServices.ts" Url="Scripts/app/services/superheroesServices.ts" ReplaceContent="TRUE" />
     <File Path="Scripts\app\app.js" Url="Scripts/app/app.js" ReplaceContent="TRUE" />
     <File Path="Scripts\bootstraper.ts" Url="Scripts/bootstraper.ts" ReplaceContent="TRUE" />
     <File Path="Scripts\bootstraper.js" Url="Scripts/bootstraper.js" ReplaceContent="TRUE" />
     <File Path="Scripts\typings\es6-promise\es6-promise.d.ts" Url="Scripts/typings/es6-promise/es6-promise.d.ts" ReplaceContent="TRUE" />
-    <File Path="Scripts\app\superheroes\superHeroes.html" Url="Scripts/app/superheroes/superHeroes.html" ReplaceContent="TRUE" />
+    <File Path="Scripts\app\view\listSuperHeroes.html" Url="Scripts/app/view/listSuperHeroes.html" ReplaceContent="TRUE" />
     <File Path="Scripts\typings\mustache\mustache.d.ts" Url="Scripts/typings/mustache/mustache.d.ts" ReplaceContent="TRUE" />
     <File Path="Scripts\vendor\mustache\mustache.js" Url="Scripts/vendor/mustache/mustache.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\app\view\addSuperHeroes.html" Url="Scripts/app/view/addSuperHeroes.html" ReplaceContent="TRUE" />
+    <File Path="Scripts\app\view\editSuperHeroes.html" Url="Scripts/app/view/editSuperHeroes.html" ReplaceContent="TRUE" />
+    <File Path="Scripts\app\view\deleteSuperHeroes.html" Url="Scripts/app/view/deleteSuperHeroes.html" ReplaceContent="TRUE" />
+    <File Path="Scripts\app\services\superheroesservices.js" Url="Scripts/app/services/superheroesservices.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\bootstraperView.ts" Url="Scripts/bootstraperView.ts" ReplaceContent="TRUE" />
+    <File Path="Scripts\bootstraperView.js" Url="Scripts/bootstraperView.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>

@@ -43,7 +43,27 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="Scripts\app\superheroes\superHeroes.html" />
+    <Content Include="Images\2.png" />
+    <Content Include="Images\Catwoman.jpg" />
+    <Content Include="Images\ironman.jpg" />
+    <Content Include="Images\Logo.jpg" />
+    <Content Include="Images\LogoA.jpg">
+      <OpcRelationship>manifest-icon</OpcRelationship>
+    </Content>
+    <Content Include="Images\Robin.jpg" />
+    <Content Include="Images\capitanAmerica.png" />
+    <Content Include="Images\hulk.jpg" />
+    <Content Include="Images\spiderman.jpg" />
+    <Content Include="Images\superman_.png" />
+    <Content Include="Images\thor.jpg" />
+    <Content Include="Images\wolverine14.jpg" />
+    <Content Include="Pages\View.aspx" />
+    <Content Include="Scripts\app\services\superheroesservices.js" />
+    <Content Include="Scripts\app\view\addSuperHeroes.html" />
+    <Content Include="Scripts\app\view\editSuperHeroes.html" />
+    <Content Include="Scripts\app\view\deleteSuperHeroes.html" />
+    <Content Include="Scripts\app\view\listSuperHeroes.html" />
+    <Content Include="Scripts\bootstraperView.js" />
     <Content Include="Scripts\vendor\mustache\mustache.js" />
     <Content Include="SuperHerores\Elements.xml" />
     <Content Include="SuperHerores\Schema.xml" />
@@ -67,7 +87,6 @@
       <SharePointProjectItemId>{9c530c03-b71c-45e9-88be-677338e94f47}</SharePointProjectItemId>
     </None>
     <Content Include="Scripts\app\app.js" />
-    <Content Include="Scripts\app\superheroes\superheroes.js" />
     <Content Include="Scripts\bootstraper.js" />
     <Content Include="Scripts\Elements.xml" />
     <Content Include="Scripts\App.js" />
@@ -86,9 +105,7 @@
     <Content Include="Content\App.css" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Images\AppIcon.png">
-      <OpcRelationship>manifest-icon</OpcRelationship>
-    </Content>
+    <Content Include="Images\AppIcon.png" />
     <Content Include="Images\Elements.xml" />
     <None Include="Images\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{66b0dcac-14d8-4be1-90bb-915e4fd0e745}</SharePointProjectItemId>
@@ -115,7 +132,8 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\app\app.ts" />
-    <TypeScriptCompile Include="Scripts\app\superheroes\superheroes.ts" />
+    <TypeScriptCompile Include="Scripts\app\services\superheroesServices.ts" />
+    <TypeScriptCompile Include="Scripts\bootstraperView.ts" />
     <TypeScriptCompile Include="Scripts\bootstraper.ts" />
     <TypeScriptCompile Include="Scripts\typings\es6-promise\es6-promise.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />

@@ -3,5 +3,17 @@
   <Files>
     <ProjectItemFile Source="Elements.xml" Target="Images\" Type="ElementManifest" />
     <ProjectItemFile Source="AppIcon.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="spiderman.jpg" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="wolverine14.jpg" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="hulk.jpg" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="thor.jpg" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Robin.jpg" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="2.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="superman_.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="capitanAmerica.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="ironman.jpg" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Catwoman.jpg" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Logo.jpg" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="LogoA.jpg" Target="Images\" Type="ElementFile" />
   </Files>
 </ProjectItem>

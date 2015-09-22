@@ -1,12 +1,52 @@
-define(["require", "exports", "superheroes/superheroes", "mustache"], function (require, exports, marvel, mustache) {
+define(["require", "exports", "services/superheroesservices", "mustache"], function (require, exports, marvel, mustache) {
+    var item = new marvel.superHeroes.marvel();
     function run() {
-        var item = new marvel.superHeroes.marvel();
+        loadData();
+        $("#btnAdd").click(function () {
+            $("#templates").load("../Scripts/app/view/addsuperheroes.html", function () {
+                var template = $('#templates').html();
+                var data;
+                var html = mustache.render(template, data);
+                $('#message').html(html);
+                $('#templates').html('');
+                $('#btnSaveSuperHeroes').click(function () {
+                    var superHeroe;
+                    superHeroe = new marvel.superHeroes.superHeroes(0, $("#Titulo").val(), $("#Imagen").val(), "");
+                    item.addData(superHeroe).then(function () {
+                        loadData();
+                    });
+                });
+            });
+        });
+    }
+    exports.run = run;
+    function loadId(id) {
+        var element = item.getData(id).then(function (data) {
+            $("#templates").load("../Scripts/app/view/editsuperheroes.html", function () {
+                var template = $('#templates').html();
+                var html = mustache.render(template, data);
+                $('#message').html(html);
+            });
+        });
+    }
+    exports.loadId = loadId;
+    function loadData() {
         var heroes = item.getHeroes().then(function (data) {
             if (data.length > 0) {
-                $("#templates").load("../Scripts/app/superheroes/superheroes.html", function () {
+                $("#templates").load("../Scripts/app/view/listsuperheroes.html", function () {
                     var template = $('#templates').html();
                     var html = mustache.render(template, data);
                     $('#message').html(html);
+                    $('#templates').html('');
+                    var element = $('.divPicture a');
+                    for (var i = 0; i < element.length; i++) {
+                        var itemEnlace = element[i];
+                        var id = itemEnlace.getAttribute("name");
+                        $('.divPicture a#' + id).click(function () {
+                            var that = this;
+                            loadId(parseInt(that.id));
+                        });
+                    }
                 });
             }
             else {
@@ -14,5 +54,4 @@ define(["require", "exports", "superheroes/superheroes", "mustache"], function (
             }
         });
     }
-    exports.run = run;
 });

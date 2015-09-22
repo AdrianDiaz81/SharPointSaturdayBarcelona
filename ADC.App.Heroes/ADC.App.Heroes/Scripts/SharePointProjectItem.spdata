@@ -28,5 +28,8 @@
     <ProjectItemFile Source="app\services\superheroesservices.js" Target="Scripts\app\services\" Type="ElementFile" />
     <ProjectItemFile Source="bootstraperView.ts" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="bootstraperView.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="vendor\toastr\toastr.min.js" Target="Scripts\vendor\toastr\" Type="ElementFile" />
+    <ProjectItemFile Source="vendor\toastr\toastr.js" Target="Scripts\vendor\toastr\" Type="ElementFile" />
+    <ProjectItemFile Source="app\common\logger.ts" Target="Scripts\app\common\" Type="ElementFile" />
   </Files>
 </ProjectItem>

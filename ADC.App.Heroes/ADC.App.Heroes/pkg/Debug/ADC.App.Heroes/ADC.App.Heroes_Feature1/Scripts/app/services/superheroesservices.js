@@ -75,6 +75,41 @@ define(["require", "exports"], function (require, exports) {
                     });
                 });
             };
+            marvel.prototype.editData = function (item) {
+                var list = this._web.get_lists().getByTitle("SuperHeroes");
+                var listItem = list.getItemById(item._id);
+                listItem.set_item("Title", item._name);
+                listItem.set_item("Photo", item._photo);
+                listItem.update();
+                this._context.load(listItem);
+                var context = this._context;
+                return new Promise(function (resolve, reject) {
+                    context.executeQueryAsync(function (data) {
+                        alert("Elemento Actualizado");
+                        return resolve(true);
+                    }, function (error) {
+                        return reject(false);
+                        alert("Error al Actualizar un elemento");
+                        alert(error);
+                    });
+                });
+            };
+            marvel.prototype.deleteData = function (id) {
+                var list = this._web.get_lists().getByTitle("SuperHeroes");
+                var listItem = list.getItemById(id);
+                listItem.deleteObject();
+                var context = this._context;
+                return new Promise(function (resolve, reject) {
+                    context.executeQueryAsync(function (data) {
+                        alert("Elemento Eliminado");
+                        return resolve(true);
+                    }, function (error) {
+                        return reject(false);
+                        alert("Error al eliminar un elemento");
+                        alert(error);
+                    });
+                });
+            };
             return marvel;
         })();
         superHeroes_1.marvel = marvel;

@@ -27,5 +27,8 @@
     <File Path="Scripts\app\services\superheroesservices.js" Url="Scripts/app/services/superheroesservices.js" ReplaceContent="TRUE" />
     <File Path="Scripts\bootstraperView.ts" Url="Scripts/bootstraperView.ts" ReplaceContent="TRUE" />
     <File Path="Scripts\bootstraperView.js" Url="Scripts/bootstraperView.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\vendor\toastr\toastr.min.js" Url="Scripts/vendor/toastr/toastr.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\vendor\toastr\toastr.js" Url="Scripts/vendor/toastr/toastr.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\app\common\Logger.ts" Url="Scripts/app/common/Logger.ts" ReplaceContent="TRUE" />
   </Module>
 </Elements>

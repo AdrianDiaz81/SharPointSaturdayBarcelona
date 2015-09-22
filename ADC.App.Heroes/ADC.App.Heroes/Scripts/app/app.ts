@@ -13,8 +13,7 @@ var item: marvel.superHeroes.marvel = new marvel.superHeroes.marvel();
                 var data: any;
                 var html = mustache.render(template,  data);
                 $('#message').html(html);
-                $('#templates').html('');
-              
+                $('#templates').html('');              
                 $('#btnSaveSuperHeroes').click(function () {                
                     var superHeroe: marvel.superHeroes.superHeroes;                   
                     superHeroe = new marvel.superHeroes.superHeroes(0, $("#Titulo").val(), $("#Imagen").val(), "");
@@ -22,8 +21,7 @@ var item: marvel.superHeroes.marvel = new marvel.superHeroes.marvel();
                         loadData();
                     });
                 });
-            });
-          
+            });          
         });
 }
 
@@ -31,9 +29,7 @@ var item: marvel.superHeroes.marvel = new marvel.superHeroes.marvel();
         var element = item.getData(id).then(function (data) {
             $("#templates").load("../Scripts/app/view/editsuperheroes.html", function () {
                 var template = $('#templates').html();
-
                 var html = mustache.render(template, data);
-
                 $('#message').html(html);
                 $('#btnEditSuperHeroes').click(function () {
                     var superHeroe: marvel.superHeroes.superHeroes;

@@ -99,5 +99,46 @@ export module superHeroes {
 
         }
 
+        editData(item: superHeroes): Promise<boolean> {
+            var list: SP.List = this._web.get_lists().getByTitle("SuperHeroes");
+            var listItem: SP.ListItem = list.getItemById(item._id);
+            listItem.set_item("Title", item._name);
+            listItem.set_item("Photo", item._photo);
+            listItem.update();
+            this._context.load(listItem);
+            var context = this._context;
+            return new Promise<boolean>(function (resolve: any, reject: any) {
+
+                context.executeQueryAsync(function (data) {
+                    alert("Elemento Actualizado");
+                    return resolve(true);
+                }, function (error) {
+                    return reject(false);
+                    alert("Error al Actualizar un elemento");
+                    alert(error);
+                });
+            });
+        }
+
+        deleteData(id: number): Promise<boolean> {
+            var list: SP.List = this._web.get_lists().getByTitle("SuperHeroes");
+            var listItem: SP.ListItem = list.getItemById(id);
+           
+            listItem.deleteObject();
+           
+            var context = this._context;
+            return new Promise<boolean>(function (resolve: any, reject: any) {
+
+                context.executeQueryAsync(function (data) {
+                    alert("Elemento Eliminado");
+                    return resolve(true);
+                }, function (error) {
+                    return reject(false);
+                    alert("Error al eliminar un elemento");
+                    alert(error);
+                });
+            });
+        }
+
     }
 }

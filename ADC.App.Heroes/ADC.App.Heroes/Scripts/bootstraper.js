@@ -4,7 +4,8 @@ require.config({
     shim: {},
     paths: {
         'jquery': '../vendor/jquery/jquery-1.9.1',
-        'mustache': '../vendor/mustache/mustache'
+        'mustache': '../vendor/mustache/mustache',
+        'toastr': '../vendor/toastr/toastrj'
     }
 });
-require(['app', 'jquery', 'mustache'], function (app) { app.run(); });
+require(['app', 'jquery', 'mustache', 'toastr'], function (app) { app.run(); });

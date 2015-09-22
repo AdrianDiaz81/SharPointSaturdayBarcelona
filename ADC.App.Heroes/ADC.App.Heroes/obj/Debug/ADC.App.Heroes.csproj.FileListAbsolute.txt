@@ -2,3 +2,7 @@ c:\users\adrian\documents\visual studio 2013\Projects\ADC.App.Heroes\ADC.App.Her
 c:\users\adrian\documents\visual studio 2013\Projects\ADC.App.Heroes\ADC.App.Heroes\obj\Debug\ADC.App.Heroes.dll
 c:\users\adrian\documents\visual studio 2013\Projects\ADC.App.Heroes\ADC.App.Heroes\obj\Debug\ADC.App.Heroes.pdb
 C:\Users\Adrian\Documents\Visual Studio 2013\Projects\ADC.App.Heroes\ADC.App.Heroes\obj\Debug\ADC.App.Heroes.csprojResolveAssemblyReference.cache
+C:\Users\adiaz\Documents\GitHubVisualStudio\SharPointSaturdayBarcelona\ADC.App.Heroes\ADC.App.Heroes\bin\Debug\ADC.App.Heroes.pdb
+C:\Users\adiaz\Documents\GitHubVisualStudio\SharPointSaturdayBarcelona\ADC.App.Heroes\ADC.App.Heroes\obj\Debug\ADC.App.Heroes.csprojResolveAssemblyReference.cache
+C:\Users\adiaz\Documents\GitHubVisualStudio\SharPointSaturdayBarcelona\ADC.App.Heroes\ADC.App.Heroes\obj\Debug\ADC.App.Heroes.dll
+C:\Users\adiaz\Documents\GitHubVisualStudio\SharPointSaturdayBarcelona\ADC.App.Heroes\ADC.App.Heroes\obj\Debug\ADC.App.Heroes.pdb

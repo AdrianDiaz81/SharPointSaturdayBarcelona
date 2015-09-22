@@ -3,5 +3,9 @@
   <Files>
     <ProjectItemFile Source="Elements.xml" Target="Content\" Type="ElementManifest" />
     <ProjectItemFile Source="App.css" Target="Content\" Type="ElementFile" />
+    <ProjectItemFile Source="toastr.scss" Target="Content\" Type="ElementFile" />
+    <ProjectItemFile Source="toastr.min.css" Target="Content\" Type="ElementFile" />
+    <ProjectItemFile Source="toastr.less" Target="Content\" Type="ElementFile" />
+    <ProjectItemFile Source="toastr.css" Target="Content\" Type="ElementFile" />
   </Files>
 </ProjectItem>

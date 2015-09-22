@@ -6,8 +6,9 @@ require.config({
     },
     paths: {
         'jquery': '../vendor/jquery/jquery-1.9.1',
-        'mustache': '../vendor/mustache/mustache'
+        'mustache': '../vendor/mustache/mustache',
+        'toastr':'../vendor/toastr/toastrj'
     }
 }); 
-require(['app','jquery','mustache'],
+require(['app','jquery','mustache','toastr'],
     (app: any)=> { app.run(); });

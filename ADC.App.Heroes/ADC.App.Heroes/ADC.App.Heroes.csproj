@@ -43,6 +43,8 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="Content\toastr.css" />
+    <Content Include="Content\toastr.min.css" />
     <Content Include="Images\2.png" />
     <Content Include="Images\Catwoman.jpg" />
     <Content Include="Images\ironman.jpg" />
@@ -64,10 +66,14 @@
     <Content Include="Scripts\app\view\deleteSuperHeroes.html" />
     <Content Include="Scripts\app\view\listSuperHeroes.html" />
     <Content Include="Scripts\bootstraperView.js" />
+    <Content Include="Scripts\vendor\toastr\toastr.js" />
+    <Content Include="Scripts\vendor\toastr\toastr.min.js" />
     <Content Include="Scripts\vendor\mustache\mustache.js" />
     <Content Include="SuperHerores\Elements.xml" />
     <Content Include="SuperHerores\Schema.xml" />
     <Content Include="SuperHerores\SuperHeroresInstance\Elements.xml" />
+    <None Include="Content\toastr.less" />
+    <None Include="Content\toastr.scss" />
     <None Include="packages.config" />
     <None Include="Pages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{0bfebaac-90e9-4498-b7c6-b3d4b25b3810}</SharePointProjectItemId>
@@ -132,6 +138,7 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\app\app.ts" />
+    <TypeScriptCompile Include="Scripts\app\common\logger.ts" />
     <TypeScriptCompile Include="Scripts\app\services\superheroesServices.ts" />
     <TypeScriptCompile Include="Scripts\bootstraperView.ts" />
     <TypeScriptCompile Include="Scripts\bootstraper.ts" />
@@ -141,6 +148,20 @@
     <TypeScriptCompile Include="Scripts\typings\mustache\mustache.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\requirejs\require.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\sharepoint\SharePoint.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="FunScript.TypeScript.Binding.jquery, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FunScript.TypeScript.Binding.jquery.1.1.0.37\lib\net40\FunScript.TypeScript.Binding.jquery.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FunScript.TypeScript.Binding.lib, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FunScript.TypeScript.Binding.lib.1.1.0.37\lib\net40\FunScript.TypeScript.Binding.lib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FunScript.TypeScript.Binding.toastr, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FunScript.TypeScript.Binding.toastr.1.1.0.37\lib\net40\FunScript.TypeScript.Binding.toastr.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="87fae7c5-36af-48d9-97dd-0882dd566fc7" 
+        solutionId="87fae7c5-36af-48d9-97dd-0882dd566fc7" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="ADC.App.AngularJS.Heroes"
+        sharePointProductVersion="16.0">
+  <features>
+        <featureReference itemId="518c6230-53c2-48c1-9165-1e3b800c4b3a" />
+  </features>
+</package>

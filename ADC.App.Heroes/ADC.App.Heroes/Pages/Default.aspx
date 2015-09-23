@@ -16,6 +16,7 @@
     <link rel="Stylesheet" type="text/css" href="../Content/App.css" />
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css"/>
+    <link rel="Stylesheet" href="../Content/toastr.css" />
   
     <!-- Add your JavaScript to the following file -->
      <script type="text/ecmascript" data-main="../scripts/bootstraper" src="../Scripts/vendor/require.js"></script>

@@ -1,5 +1,6 @@
 ﻿/// <reference path="../../typings/es6-promise/es6-promise.d.ts" />
 /// <reference path="../../typings/sharepoint/sharepoint.d.ts" />
+import logger = require("common/logger");
 export module superHeroes {
     export class superHeroes {
         constructor(id:number,name: string, photo: string, sexo: string) {
@@ -20,10 +21,11 @@ export module superHeroes {
               
             this._context = SP.ClientContext.get_current();
             this._web = this._context.get_web();
+            this._logger = new logger.Function.Logger(logger.Function.TypeAlert.Toast);
         }
         private _web: SP.Web;
         private _context: SP.ClientContext;
-
+        public _logger: logger.Function.Logger;
         getHeroes(): Promise<Array<superHeroes>> {
             var result: Array<superHeroes> = new Array<superHeroes>();
             
@@ -49,6 +51,7 @@ export module superHeroes {
                         return resolve(result);
                     },
                     function () {
+                        
                         console.log("Error al consultar la lista de Sharepoint");
                         return reject("error");
                     });
@@ -85,14 +88,15 @@ export module superHeroes {
             newItem.update();
             this._context.load(newItem);
             var context = this._context;
+            var logger = this._logger;
             return new Promise<boolean>(function (resolve: any, reject: any) {
 
                 context.executeQueryAsync(function (data) {
-                    alert("Elemento insertado");
+                    logger.showMessage("Elemento insertado");
                     return resolve(true);
                 }, function (error) {
                     return reject(false);
-                    alert("Error al instertar un elemento");
+                    logger.errorMessage("Error al instertar un elemento");
                     alert(error);
                 });
             });
@@ -107,15 +111,16 @@ export module superHeroes {
             listItem.update();
             this._context.load(listItem);
             var context = this._context;
+            var logger = this._logger;
             return new Promise<boolean>(function (resolve: any, reject: any) {
 
                 context.executeQueryAsync(function (data) {
-                    alert("Elemento Actualizado");
+                    logger.showMessage("Elemento Actualizado");
                     return resolve(true);
                 }, function (error) {
                     return reject(false);
-                    alert("Error al Actualizar un elemento");
-                    alert(error);
+                    logger.errorMessage("Error al Actualizar un elemento");
+                   
                 });
             });
         }
@@ -127,15 +132,16 @@ export module superHeroes {
             listItem.deleteObject();
            
             var context = this._context;
+            var logger = this._logger;
             return new Promise<boolean>(function (resolve: any, reject: any) {
 
                 context.executeQueryAsync(function (data) {
-                    alert("Elemento Eliminado");
+                    logger.infoMessage("Elemento Eliminado");
                     return resolve(true);
                 }, function (error) {
                     return reject(false);
-                    alert("Error al eliminar un elemento");
-                    alert(error);
+                    logger.errorMessage("Error al eliminar un elemento");
+                  
                 });
             });
         }

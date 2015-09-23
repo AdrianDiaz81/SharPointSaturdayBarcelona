@@ -14,9 +14,8 @@ var item: marvel.superHeroes.marvel = new marvel.superHeroes.marvel();
                 var html = mustache.render(template,  data);
                 $('#message').html(html);
                 $('#templates').html('');              
-                $('#btnSaveSuperHeroes').click(function () {                
-                    var superHeroe: marvel.superHeroes.superHeroes;                   
-                    superHeroe = new marvel.superHeroes.superHeroes(0, $("#Titulo").val(), $("#Imagen").val(), "");
+                $('#btnSaveSuperHeroes').click(function () {                               
+                    var superHeroe: marvel.superHeroes.superHeroes = new marvel.superHeroes.superHeroes(0, $("#Title").val(), $("#Imagen").val(), "");
                     item.addData(superHeroe).then(function () {
                         loadData();
                     });
@@ -31,9 +30,9 @@ var item: marvel.superHeroes.marvel = new marvel.superHeroes.marvel();
                 var template = $('#templates').html();
                 var html = mustache.render(template, data);
                 $('#message').html(html);
-                $('#btnEditSuperHeroes').click(function () {
-                    var superHeroe: marvel.superHeroes.superHeroes;
-                    superHeroe = new marvel.superHeroes.superHeroes(1, $("#Titulo").val(), $("#Imagen").val(), "");
+                $('#templates').html(''); 
+                $('#btnEditSuperHeroes').click(function () {                  
+                   var superHeroe: marvel.superHeroes.superHeroes = new marvel.superHeroes.superHeroes($("#Id").val(), $("#Title").val(), $("#Imagen").val(), "");
                     item.editData(superHeroe).then(function () {
                         loadData();
                     });

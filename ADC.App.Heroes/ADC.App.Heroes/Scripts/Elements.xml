@@ -30,5 +30,7 @@
     <File Path="Scripts\vendor\toastr\toastr.min.js" Url="Scripts/vendor/toastr/toastr.min.js" ReplaceContent="TRUE" />
     <File Path="Scripts\vendor\toastr\toastr.js" Url="Scripts/vendor/toastr/toastr.js" ReplaceContent="TRUE" />
     <File Path="Scripts\app\common\Logger.ts" Url="Scripts/app/common/Logger.ts" ReplaceContent="TRUE" />
+    <File Path="Scripts\typings\toastr\toastr.d.ts" Url="Scripts/typings/toastr/toastr.d.ts" ReplaceContent="TRUE" />
+    <File Path="Scripts\app\common\logger.js" Url="Scripts/app/common/logger.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>

@@ -10,8 +10,7 @@ define(["require", "exports", "services/superheroesservices", "mustache"], funct
                 $('#message').html(html);
                 $('#templates').html('');
                 $('#btnSaveSuperHeroes').click(function () {
-                    var superHeroe;
-                    superHeroe = new marvel.superHeroes.superHeroes(0, $("#Titulo").val(), $("#Imagen").val(), "");
+                    var superHeroe = new marvel.superHeroes.superHeroes(0, $("#Title").val(), $("#Imagen").val(), "");
                     item.addData(superHeroe).then(function () {
                         loadData();
                     });
@@ -26,9 +25,9 @@ define(["require", "exports", "services/superheroesservices", "mustache"], funct
                 var template = $('#templates').html();
                 var html = mustache.render(template, data);
                 $('#message').html(html);
+                $('#templates').html('');
                 $('#btnEditSuperHeroes').click(function () {
-                    var superHeroe;
-                    superHeroe = new marvel.superHeroes.superHeroes(1, $("#Titulo").val(), $("#Imagen").val(), "");
+                    var superHeroe = new marvel.superHeroes.superHeroes($("#Id").val(), $("#Title").val(), $("#Imagen").val(), "");
                     item.editData(superHeroe).then(function () {
                         loadData();
                     });

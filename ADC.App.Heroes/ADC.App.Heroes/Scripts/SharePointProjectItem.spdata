@@ -31,5 +31,7 @@
     <ProjectItemFile Source="vendor\toastr\toastr.min.js" Target="Scripts\vendor\toastr\" Type="ElementFile" />
     <ProjectItemFile Source="vendor\toastr\toastr.js" Target="Scripts\vendor\toastr\" Type="ElementFile" />
     <ProjectItemFile Source="app\common\logger.ts" Target="Scripts\app\common\" Type="ElementFile" />
+    <ProjectItemFile Source="typings\toastr\toastr.d.ts" Target="Scripts\typings\toastr\" Type="ElementFile" />
+    <ProjectItemFile Source="app\common\logger.js" Target="Scripts\app\common\" Type="ElementFile" />
   </Files>
 </ProjectItem>

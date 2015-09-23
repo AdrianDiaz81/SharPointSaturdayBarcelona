@@ -7,7 +7,7 @@ require.config({
     paths: {
         'jquery': '../vendor/jquery/jquery-1.9.1',
         'mustache': '../vendor/mustache/mustache',
-        'toastr':'../vendor/toastr/toastrj'
+        'toastr':'../vendor/toastr/toastr'
     }
 }); 
 require(['app','jquery','mustache','toastr'],

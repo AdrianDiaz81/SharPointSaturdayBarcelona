@@ -59,7 +59,7 @@
     <Content Include="Images\superman_.png" />
     <Content Include="Images\thor.jpg" />
     <Content Include="Images\wolverine14.jpg" />
-    <Content Include="Pages\View.aspx" />
+    <Content Include="Scripts\app\common\logger.js" />
     <Content Include="Scripts\app\services\superheroesservices.js" />
     <Content Include="Scripts\app\view\addSuperHeroes.html" />
     <Content Include="Scripts\app\view\editSuperHeroes.html" />
@@ -148,6 +148,7 @@
     <TypeScriptCompile Include="Scripts\typings\mustache\mustache.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\requirejs\require.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\sharepoint\SharePoint.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\toastr\toastr.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FunScript.TypeScript.Binding.jquery, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">

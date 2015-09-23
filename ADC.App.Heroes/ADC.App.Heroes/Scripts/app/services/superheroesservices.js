@@ -1,6 +1,4 @@
-define(["require", "exports"], function (require, exports) {
-    /// <reference path="../../typings/es6-promise/es6-promise.d.ts" />
-    /// <reference path="../../typings/sharepoint/sharepoint.d.ts" />
+define(["require", "exports", "common/logger"], function (require, exports, logger) {
     var superHeroes;
     (function (superHeroes_1) {
         var superHeroes = (function () {
@@ -17,6 +15,7 @@ define(["require", "exports"], function (require, exports) {
             function marvel() {
                 this._context = SP.ClientContext.get_current();
                 this._web = this._context.get_web();
+                this._logger = new logger.Function.Logger(logger.Function.TypeAlert.Toast);
             }
             marvel.prototype.getHeroes = function () {
                 var result = new Array();
@@ -64,13 +63,14 @@ define(["require", "exports"], function (require, exports) {
                 newItem.update();
                 this._context.load(newItem);
                 var context = this._context;
+                var logger = this._logger;
                 return new Promise(function (resolve, reject) {
                     context.executeQueryAsync(function (data) {
-                        alert("Elemento insertado");
+                        logger.showMessage("Elemento insertado");
                         return resolve(true);
                     }, function (error) {
                         return reject(false);
-                        alert("Error al instertar un elemento");
+                        logger.errorMessage("Error al instertar un elemento");
                         alert(error);
                     });
                 });
@@ -83,14 +83,14 @@ define(["require", "exports"], function (require, exports) {
                 listItem.update();
                 this._context.load(listItem);
                 var context = this._context;
+                var logger = this._logger;
                 return new Promise(function (resolve, reject) {
                     context.executeQueryAsync(function (data) {
-                        alert("Elemento Actualizado");
+                        logger.showMessage("Elemento Actualizado");
                         return resolve(true);
                     }, function (error) {
                         return reject(false);
-                        alert("Error al Actualizar un elemento");
-                        alert(error);
+                        logger.errorMessage("Error al Actualizar un elemento");
                     });
                 });
             };
@@ -99,14 +99,14 @@ define(["require", "exports"], function (require, exports) {
                 var listItem = list.getItemById(id);
                 listItem.deleteObject();
                 var context = this._context;
+                var logger = this._logger;
                 return new Promise(function (resolve, reject) {
                     context.executeQueryAsync(function (data) {
-                        alert("Elemento Eliminado");
+                        logger.infoMessage("Elemento Eliminado");
                         return resolve(true);
                     }, function (error) {
                         return reject(false);
-                        alert("Error al eliminar un elemento");
-                        alert(error);
+                        logger.errorMessage("Error al eliminar un elemento");
                     });
                 });
             };
